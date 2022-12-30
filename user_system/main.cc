@@ -1,6 +1,12 @@
+/*
+	The reason this is indented by one space (i think),
+	is because I used emacs for this project.
+*/
+
 #include <iostream>
 #include <vector>
 
+// I can't really explain, sorry for bad commenting on code
 class user {
 
   std::string name;
@@ -39,6 +45,7 @@ std::vector<user> user::create_user(user u, std::vector<user> users) {
   return users;
 }
 
+// This just lists everything you can do.
 void list() {
   std::cout << "What would you like to do?\n\n";
 
@@ -47,6 +54,7 @@ void list() {
   std::cout << "(C) - Log all users\n";
 }
 
+// I don't know why I made this, but it worked while working on the project
 bool detect_not_null(std::string s, int i) {
   if (s != "" && i != 0)
     return true;
@@ -154,3 +162,6 @@ int main(int argc, char* argv[]) {
   
   return 0;
 }
+/*
+	It's offical, I can't comment my code.
+*/
